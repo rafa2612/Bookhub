@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.aboutfragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeabout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/aboutapptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/about_fragment"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:id="@+id/aboutdescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/aboutapptext"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="Bookhub, is great app for book lovers. It’s really not that hard to fall in love with this app. Bookhub has a lot of books its database and the usability of the app itself is fantastic. Bookhub also supports many different formats including .epub and .pdf. Other noteworthy features include the realistic flipping visuals that imitates the flipping of a real page, useful controls, such as brightness control, day or night style settings, and, perhaps the most special of all, free books."
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

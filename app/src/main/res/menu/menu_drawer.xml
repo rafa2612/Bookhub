@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard"
+        />
+
+    <item
+        android:icon="@drawable/ic_favourites"
+        android:id="@+id/favourites"
+        android:title="@string/Favourites" />
+    <item
+        android:icon="@drawable/ic_profile"
+        android:id="@+id/profile"
+        android:title="@string/Profile"/>
+    <item
+        android:icon="@drawable/ic_about"
+        android:id="@+id/about"
+        android:title="@string/About_app" />
+
+    <item
+        android:icon="@drawable/ic_logout"
+        android:id="@+id/logout"
+        android:title="Logout"/>
+
+
+</menu>

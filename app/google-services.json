@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906524904429",
+    "firebase_url": "https://bookhub-d5ea4.firebaseio.com",
+    "project_id": "bookhub-d5ea4",
+    "storage_bucket": "bookhub-d5ea4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906524904429:android:b1377e7fdb4bf979e6f5e4",
+        "android_client_info": {
+          "package_name": "com.internshala.bookhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906524904429-2qev65dussm8o0fnbs38vd80301vho0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.internshala.bookhub",
+            "certificate_hash": "d80e0917133dbaafc7ce69316d0c6c2cfa099e62"
+          }
+        },
+        {
+          "client_id": "906524904429-88dv5omuc3qutjr8ii55r34rf4mr24n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATtygaCtZQ3H1IEPfWqceaW_CECXnSEEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906524904429-88dv5omuc3qutjr8ii55r34rf4mr24n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

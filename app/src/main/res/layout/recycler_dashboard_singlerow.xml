@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativelayoutrecycler"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/recyclerimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:cropToPadding="true"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerInside"
+        android:padding="10dp"
+
+
+        app:srcCompat="@drawable/book"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutrecyclerdashboard"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recyclerimg"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/recyclerlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="2"
+            android:fontFamily="cursive"
+
+            android:scrollbars="vertical"
+            android:text="BOOKNAME"
+            android:textColor="#0A8F06"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/authornamerecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Name of author"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/pricerecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:padding="2dp"
+            android:text="Rs. 299"
+            android:textColor="@color/cardview_dark_background"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ratingrecycler"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+
+        android:layout_marginTop="3dp"
+        android:text="4.5"
+        android:textAlignment="viewEnd"
+        android:textColor="#F1F817"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/linearlayoutrecyclerdashboard"/>
+
+</RelativeLayout>

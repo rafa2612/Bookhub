@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.profilefragment"
+    android:background="#ffffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintprofile"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        >
+
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="127dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="142dp"
+            android:src="@drawable/ic_profileimage"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:scaleType="centerCrop"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativeprofile"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/usernamelinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="19dp"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/usernameprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constraintprofile"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="username"
+                tools:ignore="NotSibling" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/emaillinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernamelinear"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="19dp"
+                android:src="@drawable/ic_email"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/emailidprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="email"
+                tools:ignore="NotSibling" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mobilelinear"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emaillinear"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="19dp"
+                android:src="@drawable/ic_phone"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/mobileprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="mobile"
+                tools:ignore="NotSibling" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genderlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobilelinear"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="19dp"
+                android:src="@drawable/ic_gender"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/genderprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="gender"
+                tools:ignore="NotSibling" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <ProgressBar
+            android:id="@+id/progressbarprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></ProgressBar>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

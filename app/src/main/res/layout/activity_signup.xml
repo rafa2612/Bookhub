@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/signuplayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login">
+
+    <TextView
+        android:id="@+id/signupregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER YOURSELF"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/signupusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupregister"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/full_name"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#7E7B7B" />
+
+    <EditText
+        android:id="@+id/signupmobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupusername"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/mobile_no"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColorHint="#7E7B7B" />
+
+    <EditText
+        android:id="@+id/signuppassward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupmobileno"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Passward"
+        android:inputType="textPassword"
+
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColorHint="#7E7B7B" />
+
+    <EditText
+        android:id="@+id/signupphoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signuppassward"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/phone_no"
+        android:layout_marginTop="20dp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColorHint="#7E7B7B" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupphoneno"
+        android:padding="15dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupphoneno"
+        android:text="Gender"
+        android:textColor="#7e7b7b"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18sp"
+        android:textSize="18sp"/>
+
+    <RadioButton
+        android:id="@+id/signupmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male"
+        android:layout_toRightOf="@id/signupgender"
+        android:layout_below="@id/signupphoneno"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"></RadioButton>
+
+    <RadioButton
+        android:id="@+id/signupfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"
+        android:layout_toRightOf="@id/signupmale"
+        android:layout_below="@id/signupphoneno"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#2979FF"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:text="SIGN UP"
+        android:textColor="#E8EAF6"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/imagelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/radiogroupgender">
+
+
+    <ImageView
+        android:id="@+id/viewimage"
+        android:layout_width="183dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_person_outline_black_24dp" />
+
+    <Button
+        android:id="@+id/chooseimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
